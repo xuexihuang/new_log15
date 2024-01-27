@@ -1,7 +1,7 @@
 
 # log15
 
-This Package is a fork from [log15](https://github.com/inconshreveable/log15)
+一个go日志库，支持文件和控制台输出，支持打印日志的文件行和文件名称，支持多颜色显示，支持多级日志分级，支持按时间 分割日志，支持按大小分割日志
 
 For more information, you can access the Source Link
 
@@ -16,7 +16,7 @@ For more information, you can access the Source Link
 ## Importing
 
 ```go
-import log "github.com/xiaomi-tc/log15"
+import log "github.com/xuexihuang/new_log15"
 ```
 
 ## Examples
