@@ -3,7 +3,6 @@ package log15
 import (
 	"os"
 
-	"github.com/mattn/go-colorable"
 	"github.com/xuexihuang/new_log15/term"
 )
 
@@ -38,7 +37,12 @@ func Root() Logger {
 	return root
 }
 
-func SetOutLevel(level Lvl) {
+func SetOutLevel(level Lvl, isForceSetColor bool) {
+	if isForceSetColor {
+		StdoutHandler = StreamHandler(colorable.NewColorableStdout(), TerminalFormat())
+		StderrHandler = StreamHandler(colorable.NewColorableStderr(), TerminalFormat())
+		root.SetHandler(StdoutHandler)
+	}
 	root.SetOutLevel(level)
 }
 
