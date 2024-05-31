@@ -1,4 +1,4 @@
-module new_log15
+module github.com/xuexihuang/new_log15
 
 go 1.19
 
@@ -6,7 +6,6 @@ require (
 	github.com/json-iterator/go v1.1.12
 	github.com/mattn/go-colorable v0.1.13
 	github.com/petermattis/goid v0.0.0-20240503122002-4b96552b8156
-	github.com/xuexihuang/new_log15 v1.0.1
 	golang.org/x/sys v0.20.0
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1
 )
